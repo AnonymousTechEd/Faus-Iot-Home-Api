@@ -1,19 +1,38 @@
 {
-  "name": "iotrestapi",
-  "version": "0.0.1",
-  "description": "A restfull api to controll my iot home and devices",
-  "main": "index.js",
+  "name": "node-js-sample",
+  "version": "0.1.0",
   "type": "module",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "mocha --reporter tap"
   },
-  "author": "Eduard Faus",
-  "license": "MIT",
   "dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^4.3.0",
     "cross-fetch": "^3.0.6",
-    "express": "^4.17.1"
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.5",
+    "express": "^4.0.0",
+    "mocha": "^8.1.3"
   },
   "engines": {
-  "node": "14.10.1"
-  }
+    "ejs": "2.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-sample"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Mark Pundsack",
+  "contributors": [
+    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+    "Hector Simpson <hector@heroku.com> (http://heroku.com)"
+  ],
+  "license": "MIT"
 }
