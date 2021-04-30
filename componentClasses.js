@@ -16,7 +16,9 @@ class ComponentIfft extends Component {
     super(app)
     this.IfftLink = IfftLink
     this.toggle = "/toggle/" + componentName
-    this.response = componentName +" Toggled"
+    this.response = {
+      response: componentName +" Toggled ",
+    }
     IfftComponents.push(this)
   }
   sendGetRequest(link) {
